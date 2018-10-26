@@ -1,0 +1,361 @@
+body {
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #f3a732;
+  box-sizing: border-box;
+}
+
+header p {
+  padding: 2px 0;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  color: black;
+  text-shadow: 1px -.5px #f3a732;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.header-logo {
+  margin: 7px;
+  float: left;
+}
+
+nav {
+  height: 120px;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ea0909;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li, li.dropdown {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #f3a732;
+  box-sizing: border-box;
+}
+
+nav li a, .dropbtn {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 5px 0;
+ text-decoration: none;
+ font-size: 18px;
+ font-weight: 900;
+ letter-spacing: .1px;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.dropbtn {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+ul#dropdown-content {
+    display: none;
+    position: absolute;  
+    height: 140px;
+    overflow: auto;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #c50709;
+  color: #F3A732;
+  font-size: 16px;
+  height: 100%;
+}
+
+#dropdown-content li {
+  padding: 0;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30px;
+}
+
+#dropdown-content li a {
+  height: 30px;
+}
+
+.dropdown:hover #dropdown-content {
+    display: block;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  text-align: justify;
+  text-indent: 1.5em;
+  background-color: white;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: black;
+  padding: 20px 10px 0 10px;
+  border-bottom: 2px dotted #edbd40;
+  box-sizing: border-box;
+}
+
+section > * {
+  padding: 1px;
+}
+
+section h1, h2 {
+  text-align: center;
+  color: #c50709;
+  text-shadow: .2px -.2px .2px #000000;
+  margin: .5px;
+  font-size: 26px;
+}
+
+section a {
+  padding: 0;
+}
+
+.slike-opacity:hover img {
+  opacity: 0.3;
+}
+
+.istorijat-slike-levo {
+  float: left;
+  margin-right: 5px;
+  width: 200px;
+  height: auto;
+}
+
+.istorijat-slike-desno {
+  float: right;
+  margin-left: 5px;
+  width: 200px;
+  height: auto;
+}
+
+aside {
+  text-align: center;
+  background-color: white;
+  display: block;
+}
+
+aside > * {
+  padding: 5px;
+  margin: 0;
+}
+
+aside h2 {
+  color: black;
+}
+
+aside ul {
+  list-style-type: none;
+  background-color: white;
+}   
+
+aside ul li {
+  margin-bottom: 14px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+footer p, span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 1.3em;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+}
+
+.footerlogo {
+  margin-top: 3px;
+}
+
+#footer-kkcz, #footer-fkcz, #footer-iticket {
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+#footer-iticket {
+  padding-bottom: 15px; 
+}
+
+.linkovi {
+  color: #c50709;
+  text-decoration: none;
+}
+
+.linkovi:hover {
+  color: #f3a732;
+}
+
+.social-networks {
+  position: absolute;
+  bottom: 25px;
+  right: 5px;
+  padding-left: 5px;
+}
+
+.social-networks a {
+  display: block;
+}
+
+.social-networks img {
+  padding-left: 15px;
+}
+
+footer span {
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  font-size: 8px;
+}
+
+@media screen and (min-width: 450px) {
+  header p {
+    font-size: 14px;
+  }
+
+  #footer-iticket {
+    text-align: right;
+    position: absolute;
+    right: 5px;
+    bottom: 5px
+  }
+  footer {
+    height: 150px;
+  }
+  .social-networks {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  .social-networks a {
+    display: inline-block;
+  }
+
+  footer span {
+    font-size: 10px;
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header p {
+    font-size: 20px;
+    text-shadow: 2px -1px #f3a732;
+  }
+
+  nav li a, .dropbtn {
+    font-size: 14px;
+  }
+
+  footer {
+    height: 120px;
+    flex-direction: row;
+  }
+  footer p {
+    float: left;
+    width: 33%;
+  }
+
+  #footer-iticket {
+    right: 10px;
+    top: 0;
+  }
+  .social-networks {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    left: auto;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  header p {
+    font-size: 26px;
+  }
+  nav {
+    height: 30px;
+  }
+  nav ul {
+    flex-direction: row;
+    height: 30px;
+  }
+  nav li {
+    width: 25%;
+  }
+  nav li a, .dropbtn {
+    font-size: 18px;
+  }
+  ul#dropdown-content {  
+    height: 300px;
+    z-index: 1;
+  }
+  main {
+    flex-direction: row;
+    bottom: 100px;
+    top: 100px;
+    grid-auto-rows: 1fr
+  }
+  section {
+    position: inherit;
+    width: 80%;
+    border: none;
+    border-right: 2px dotted #edbd40;
+  }
+  aside {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+  }
+  .istorijat-slike-levo, .istorijat-slike-desno {
+    width: 400px;
+  }
+  footer {
+    height: 100px;
+  }
+  .social-networks {
+    right: auto;
+    left: 10px;
+    bottom: 5px;
+  }
+}
